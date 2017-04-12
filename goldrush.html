@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="mirador/css/mirador-combined.css">
+    <title>Gold Rush</title>
+    <style type="text/css">
+     #viewer {
+       width: 100%;
+       height: 100%;
+       position: fixed;
+     }
+    </style>
+  </head>
+  <body>
+    <div id="viewer"></div>
+
+    <script src="mirador/mirador.min.js"></script>
+    <script type="text/javascript">
+
+     $(function() {
+       myMiradorInstance = Mirador(
+           {"workspaceType":"singleObject","saveSession":false,"workspaces":{"singleObject":{"label":"Single Object","addNew":false,"move":false,"iconClass":"image"},"compare":{"label":"Compare","iconClass":"columns"},"bookReading":{"defaultWindowOptions":{},"label":"Book Reading","addNew":true,"move":false,"iconClass":"book"}},"manifests":[],"data":[{"manifestUri":"https://www.wdl.org/en/item/14156/iiif/manifest.json","location":"World Digital Library"},{"manifestUri":"https://purl.stanford.edu/dv843cp9178/iiif/manifest","location":"Stanford University"}],"layout":"{\"type\":\"row\",\"id\":\"18e9c0fe-f2d7-499e-be83-8d73e70c95d0\",\"children\":[{\"type\":\"column\",\"depth\":1,\"value\":0,\"x\":3,\"y\":3,\"dx\":814.5,\"dy\":729,\"address\":\"row1.column1\",\"id\":\"20683b05-0060-497e-b56c-c99920a7b785\"},{\"type\":\"column\",\"id\":\"ef13a37d-415f-40fd-acba-9b1d9f26438f\",\"depth\":1,\"value\":0,\"x\":823.5,\"y\":3,\"dx\":814.5,\"dy\":729,\"address\":\"row1.column2\"}],\"depth\":0,\"value\":0,\"x\":3,\"y\":3,\"dx\":1635,\"dy\":729,\"address\":\"row1\"}","openManifestsPage":false,"preserveManifestOrder":false,"windowSettings":{"availableViews":["ThumbnailsView","ImageView","ScrollView","BookView"],"viewType":"ImageView","bottomPanel":true,"bottomPanelVisible":true,"sidePanel":true,"sidePanelOptions":{"toc":true,"annotations":false},"sidePanelVisible":true,"overlay":true,"canvasControls":{"annotations":{"annotationLayer":true,"annotationCreation":true,"annotationState":"off","annotationRefresh":false},"imageManipulation":{"manipulationLayer":true,"controls":{"rotate":true,"brightness":true,"contrast":true,"saturate":true,"grayscale":true,"invert":true}}},"fullScreen":true,"displayLayout":true,"layoutOptions":{"newObject":true,"close":true,"slotRight":true,"slotLeft":true,"slotAbove":true,"slotBelow":true}},"windowObjects":[{"id":"214df557-a766-4c9c-b308-20cc3279a1f0","slotAddress":"row1.column1","annotationsAvailable":{"ThumbnailsView":false,"ImageView":true,"ScrollView":false,"BookView":false},"bottomPanelVisible":false,"sidePanelVisible":false,"viewType":"ImageView","canvasID":"https://www.wdl.org/en/item/14156/iiif/sequence/1/canvas/1/","imageMode":"ImageView","loadedManifest":"https://www.wdl.org/en/item/14156/manifest","windowOptions":{"osdBounds":{"x":-0.37351603092525976,"y":-0.07449001736111105,"width":1.7470320618505195,"height":1.489800347222222}},"annotationState":"off"},{"id":"7c736ae4-fe70-421c-99e7-f3bd6c92948a","slotAddress":"row1.column2","annotationsAvailable":{"ThumbnailsView":false,"ImageView":true,"ScrollView":false,"BookView":false},"bottomPanelVisible":false,"sidePanelVisible":false,"viewType":"ImageView","canvasID":"https://purl.stanford.edu/dv843cp9178/iiif/canvas/dv843cp9178_1","imageMode":"ImageView","loadedManifest":"https://purl.stanford.edu/dv843cp9178/iiif/manifest","windowOptions":{"osdBounds":{"x":-0.3421114302339361,"y":-0.07181195632056259,"width":1.6842228604678722,"height":1.4362391264112528}},"annotationState":"off"}],"autoHideControls":true,"fadeDuration":400,"timeoutDuration":3000,"availableAnnotationModes":[],"availableAnnotationDrawingTools":["Rectangle","Ellipse","Freehand","Polygon","Pin"],"availableAnnotationStylePickers":["StrokeColor","FillColor","StrokeType"],"drawingToolsSettings":{"doubleClickReactionTime":300,"strokeColor":"deepSkyBlue","fillColor":"deepSkyBlue","fillColorAlpha":0,"shapeHandleSize":10,"fixedShapeSize":10,"newlyCreatedShapeStrokeWidthFactor":5,"hoverColor":"yellow","partOfPrefix":"_partOf"},"availableExternalCommentsPanel":false,"shapeHandleSize":10,"availableCanvasTools":[],"mainMenuSettings":{"show":true,"buttons":{"bookmark":false,"layout":true,"options":false,"fullScreenViewer":true}},"workspacePanelSettings":{"maxRows":5,"maxColumns":5,"preserveWindows":true},"showAddFromURLBox":true,"buildPath":"mirador/","i18nPath":"locales/","imagesPath":"images/","annotationEndpoint":{"name":"Local Storage","module":"LocalStorageEndpoint"},"annotationBodyEditor":{"module":"TinyMCEAnnotationBodyEditor","options":{"config":{"plugins":"image link media directionality","toolbar":"bold italic | bullist numlist | link image media | removeformat | ltr rtl"}}},"jsonStorageEndpoint":{"name":"JSONBlob API Endpoint","module":"JSONBlobAPI","options":{"ssl":true,"port":"443","host":"jsonblob.com"}},"sharingEndpoint":{"url":"","storeId":123,"APIKey":"23983hf98j3f9283jf2983fj"},"lockController":{"lockProfile":"lazyZoom","notifyMaxMin":true},"id":"viewer","eventEmitter":{"debug":false,"trace":false,"debugExclude":[],"emitterId":1},"manifestPanelVisible":false}
+       );
+     });
+    </script>
+  </body>
+</html>
