@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div class="page-wrap">
+    <main role="main">
+      <div class="flex-grid">
+        {% for item in site.data.workspaces %}
+        <article class="main-articles">
+           {% if item.img %}
+              <a href="{{site.baseurl}}"><img class="post-image" src={{ "/assets/images/" | prepend: site.baseurl | append: item.img }} alt="{{item.title}}"></a>
+           {% endif %}
+            <div class="post-content">
+              <div class="wrap-content">
+                <header class="header-article">
+                  <h2><a href="{{post.url | prepend: site.baseurl}}">{{item.title}}</a></h2>
+                  <div class="byline"></div>
+                </header>
+                <p>{{item.description}}</p>
+              </div>
+            </div>
+        </article>
+        {% endfor %}
+      </div>
+    </main>
+  </div>
+{% include footer.html %}
+{% include javascripts.html %}
+</body>
+</html>
